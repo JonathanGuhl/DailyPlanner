@@ -5,7 +5,7 @@
 
 ## Usage 
 - First things first, deploy the webpage from here https://jonathanguhl.github.io/DailyPlanner/
-- The page should deploy as such 
+- The page should deploy as such (only displays green 'future' blocks due to time I took the screenshot)
     ![MyImage](Assets/screencapture-file-Users-jonguhl-Desktop-bootcamp-DailyPlanner-index-html-2023-01-17-22_22_33.jpg)
 - Heres an example given to me of a user interacting with a very similar browser 
     ![MyImage](Assets/05-third-party-apis-homework-demo.gif)
