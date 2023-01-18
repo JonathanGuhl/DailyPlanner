@@ -1,7 +1,7 @@
 # DailyPlanner
 - Here I have a daily planner that allows you to input input and save whatever you wish to add to it locally
 - The HTML and CSS sheets were supplied to me, I made minor adjustments to them
-- What I learned while doing this project is how to link a Third Part Api, parse through the data, set classes based off of that data, then save whatever the user inputs locally if they desire
+- What I learned while doing this project is how to link a Third Part API, parse through the data, set classes based off of that data, then save whatever the user inputs locally if they desire
 
 ## Usage 
 - First things first, deploy the webpage from here https://jonathanguhl.github.io/DailyPlanner/
