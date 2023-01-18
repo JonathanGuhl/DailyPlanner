@@ -18,7 +18,7 @@ $(document).ready(function () {
 function timeTracker () {
     
   var currentTime = dayjs().hour();
-  console.log("Current Time" + currentTime);
+  console.log("Current Time " + currentTime);
      
 // How the blocks know if they are past, present or future
   $(".time-block").each(function () {
@@ -32,50 +32,26 @@ function timeTracker () {
       } else if (currentTime < blockTime) {
           $(this).removeClass("future");
           $(this).removeClass("past");
-          $(this).addClass("present");
+          $(this).addClass("future");
       } else {
           $(this).removeClass("present");
           $(this).removeClass("past");
-          $(this).addClass("future");
+          $(this).addClass("present");
       }
   });
 }
-// function to compare current time with block time and add css class accordingly
-// function timeTracker() {
-//   var timeNow = dayjs().hour();
 
-//     $(".time-block").each(function () {
-//       var blockTime = parseInt($(this).attr("id"));
-//         if (blockTime < timeNow) {
-//           $(this).removeClass("future");
-//           $(this).removeClass("present");
-//           $(this).addClass("past");
-//         } else if (blockTime > timeNow) {
-//           $(this).removeClass("past");
-//           $(this).removeClass("future");
-//           $(this).addClass("present");
-//         } else {
-//           $(this).removeClass("present");
-//           $(this).removeClass("past");
-//           $(this).addClass("future");
-
-//         }
-//     });
-//     }
-
-    // Pulls items from local storage
-    $("#eightAM .description").val(localStorage.getItem("eightAM"));
-    $("#nineAM .description").val(localStorage.getItem("nineAm"));
-    $("#tenAM .description").val(localStorage.getItem("tenAM"));
-    $("#elevenAM .description").val(localStorage.getItem("elevenAM"));
-    $("#twelvePM .description").val(localStorage.getItem("twelvePM"));
-    $("#onePM .description").val(localStorage.getItem("onePM"));
-    $("#twoPM .description").val(localStorage.getItem("twoPM"));
-    $("#threePM .description").val(localStorage.getItem("threePM"));
-    $("#fourPM .description").val(localStorage.getItem("fourPM"));
-
-    // timeTracker();
-    // Gives live time feed
+// Pulls items from local storage
+    $("#8 .description").val(localStorage.getItem("8"));
+    $("#9 .description").val(localStorage.getItem("9"));
+    $("#10 .description").val(localStorage.getItem("10"));
+    $("#11 .description").val(localStorage.getItem("11"));
+    $("#12 .description").val(localStorage.getItem("12"));
+    $("#13 .description").val(localStorage.getItem("13"));
+    $("#14 .description").val(localStorage.getItem("14"));
+    $("#15 .description").val(localStorage.getItem("15"));
+    $("#16 .description").val(localStorage.getItem("16"));
+ // Gives live time feed
     setInterval(displayTime, 1000); 
     timeTracker();
   });
