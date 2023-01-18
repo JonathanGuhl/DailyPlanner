@@ -50,4 +50,7 @@ function timeTracker() {
     $("#fourPM .description").val(localStorage.getItem("fourPM"));
 
     timeTracker();
+    // Gives live time feed
+    setInterval(displayTime, 1000); 
+
 })
